@@ -1,4 +1,4 @@
-FROM python:3.6.4-alpine3.7
+FROM python:3.6.4-alpine3.7 as builder
 
 RUN ["/bin/sh", "-c", "set -eux && \
         apk add --no-cache \
